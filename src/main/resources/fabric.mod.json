@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "c3h6n6o6world",
+  "version": "${version}",
+  "name": "c3h6n6o6world",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/c3h6n6o6/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "preLaunch": [
+      "com.foxapplication.mc.c3h6n6o6world.fastutil.sync.SyncFuTransformer"
+    ],
+    "main": [
+      "com.foxapplication.mc.c3h6n6o6world.C3H6N6O6World"
+    ],
+    "client": [
+      "com.foxapplication.mc.c3h6n6o6world.C3H6N6O6WorldClient"
+    ]
+  },
+  "accessWidener": "c3h6n6o6.accesswidener",
+  "mixins": [
+    "c3h6n6o6world.mixins.json",
+    {
+      "config": "c3h6n6o6world.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
