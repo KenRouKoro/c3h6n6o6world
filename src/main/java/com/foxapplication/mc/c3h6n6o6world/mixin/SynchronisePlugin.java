@@ -60,7 +60,6 @@ public class SynchronisePlugin implements IMixinConfigPlugin {
 
     /**
      * 没用到（（（
-     * @return return null 还要写注释？？？？？？
      */
     @Override
     public List<String> getMixins() {
